@@ -1,0 +1,15 @@
+<p id="result"></p>
+<input type="text" placeholder="Sadece sayi girin..." id="Number">
+<button onclick="printScreen();"Click></button>
+<script>
+    printScreen();
+    function printScreen(){
+        var x=document.getElementById('Number').value;
+        if(isNaN(x)){
+            document.getElementById('result').innerHTML="Lütfen sadece sayi girin."
+        }
+        else{
+            document.getElementById('result').innerHTML="Tebrikler girdiğiniz sayi:"+x;
+        }
+    }
+</script>
